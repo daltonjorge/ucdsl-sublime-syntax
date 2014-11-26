@@ -7,17 +7,17 @@ uuid: 52c6fed2-c305-4086-b3ef-1165b65f6bda
 
 patterns:
 - name: keyword.control.dsl
-  match: (usecase|basicFlow|alternative|exception|system)
+  match: \b(usecase|basicFlow|alternative|exception|system)\b
 
 - name: support.function.dsl
-  match: (actor|step|preCondition|postCondition|af|ef|bfs)
+  match: \b(actor|step|preCondition|postCondition|af|ef|bfs)\b
 
 - name: comment.double-slash.dsl
   begin: //
   end: $
 
 - name: constant.numeric.dsl
-  match: \d
+  match: \b(\d)+\b
 
 - name: string.quoted.double.dsl
   begin: '"'
